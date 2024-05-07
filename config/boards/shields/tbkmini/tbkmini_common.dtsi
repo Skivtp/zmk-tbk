@@ -9,14 +9,14 @@
 / {
 	chosen {
 		zmk,kscan = &kscan0;
-		zmk,matrix_transform = &default_transform;
+		zmk,matrix_transform = &skeletyl_transform;
 	};
 
 	kscan0: kscan {
 		compatible = "zmk,kscan-gpio-matrix";
 		label = "KSCAN";
 
-		diode-direction = "row2col";
+		diode-direction = "col2row";
 	};
 
 	// TODO: RGB node(s)
